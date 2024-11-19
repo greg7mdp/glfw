@@ -335,7 +335,7 @@ static void destroyContextEGL(_GLFWwindow* window)
     {
         if (window->context.egl.client)
         {
-            _glfwPlatformFreeModule(window->context.egl.client);
+            //_glfwPlatformFreeModule(window->context.egl.client);
             window->context.egl.client = NULL;
         }
     }
@@ -557,7 +557,7 @@ void _glfwTerminateEGL(void)
 
     if (_glfw.egl.handle)
     {
-        _glfwPlatformFreeModule(_glfw.egl.handle);
+        //_glfwPlatformFreeModule(_glfw.egl.handle);
         _glfw.egl.handle = NULL;
     }
 }
